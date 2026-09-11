@@ -3710,6 +3710,7 @@ Show # %H5 $type->currency $tier->d !currency_d
 	PlayAlertSound 2 300
 	PlayEffect White
 	MinimapIcon 2 White Circle
+CustomAlertSound "Oils-3.mp3" 300
 
 Hide # %H3 $type->currency $tier->e !currency_e
 	Class == "Incubators" "Stackable Currency"
@@ -4007,6 +4008,7 @@ Show # $type->currency->omen $tier->s !apex_stier
 	PlayAlertSound 6 300
 	PlayEffect Red
 	MinimapIcon 0 Red Star
+CustomAlertSound "6.mp3" 300
 
 Show # %H8 $type->currency->omen $tier->a !currency_a
 	Class == "Omen"
