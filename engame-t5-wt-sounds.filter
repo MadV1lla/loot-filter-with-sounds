@@ -3687,6 +3687,7 @@ Show # %H7 $type->currency $tier->b !currency_b
 	PlayAlertSound 2 300
 	PlayEffect Yellow
 	MinimapIcon 1 Yellow Circle
+CustomAlertSound "Oils-3.mp3" 300
 
 Show # %H6 $type->currency $tier->c !currency_c
 	Class == "Incubators" "Stackable Currency"
@@ -3710,7 +3711,6 @@ Show # %H5 $type->currency $tier->d !currency_d
 	PlayAlertSound 2 300
 	PlayEffect White
 	MinimapIcon 2 White Circle
-CustomAlertSound "Oils-3.mp3" 300
 
 Hide # %H3 $type->currency $tier->e !currency_e
 	Class == "Incubators" "Stackable Currency"
