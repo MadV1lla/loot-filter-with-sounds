@@ -3675,6 +3675,7 @@ Show # %H8 $type->currency $tier->a !currency_a
 	PlayAlertSound 1 300
 	PlayEffect Red
 	MinimapIcon 0 Red Circle
+CustomAlertSound "2.mp3" 300
 
 Show # %H7 $type->currency $tier->b !currency_b
 	Class == "Incubators" "Stackable Currency"
