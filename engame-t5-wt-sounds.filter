@@ -127,7 +127,7 @@ Show # %D7 $type->chancing $tier->chancea !itemproperty_achancing
 	ItemLevel >= 60
 	ItemLevel <= 80
 	Rarity Normal
-	BaseType == "Visceral Quiver" "Heavy Belt" "Utility Belt" "Sacred Focus" "Tasalian Focus" "Leyline Focus" "Dueling Wand" "Siphoning Wand" "Obliterator Bow" "Omen Sceptre" "Rattling Sceptre" "Flying Spear" "Grand Spear" "Akoyan Spear" "Sinister Quarterstaff" "Bolting Quarterstaff" "Gold Ring" "Solar Amulet" "Gold Amulet"
+	BaseType == "Visceral Quiver" "Sacred Focus" "Tasalian Focus" "Leyline Focus" "Dueling Wand" "Siphoning Wand" "Obliterator Bow" "Omen Sceptre" "Rattling Sceptre" "Flying Spear" "Grand Spear" "Akoyan Spear" "Sinister Quarterstaff" "Bolting Quarterstaff" "Gold Ring" "Solar Amulet" "Gold Amulet"
 	SetFontSize 35
 	SetTextColor 255 255 255 255           
 	SetBorderColor 125 255 89 255
@@ -138,7 +138,7 @@ Show # %D7 $type->chancing $tier->chancea !itemproperty_achancing
 	Corrupted False
 	Rarity Normal
 	ItemLevel == 81
-	BaseType == "Visceral Quiver" "Heavy Belt" "Utility Belt" "Sacred Focus" "Tasalian Focus" "Leyline Focus" "Dueling Wand" "Siphoning Wand" "Obliterator Bow" "Omen Sceptre" "Rattling Sceptre" "Flying Spear" "Grand Spear" "Akoyan Spear" "Sinister Quarterstaff" "Bolting Quarterstaff" "Gold Ring" "Solar Amulet" "Gold Amulet"  "Slipstrike Vest" "Sleek Jacket" "Vile Robe" "Ancestral Tiara" "Kamasan Tiara" "Sekhema Sandals" "Daggerfoot Shoes" "Quickslip Shoes"
+	BaseType == "Visceral Quiver" "Sacred Focus" "Tasalian Focus" "Leyline Focus" "Dueling Wand" "Siphoning Wand" "Obliterator Bow" "Omen Sceptre" "Rattling Sceptre" "Flying Spear" "Grand Spear" "Akoyan Spear" "Sinister Quarterstaff" "Bolting Quarterstaff" "Gold Ring" "Solar Amulet" "Gold Amulet"  "Slipstrike Vest" "Sleek Jacket" "Vile Robe" "Ancestral Tiara" "Kamasan Tiara" "Sekhema Sandals" "Daggerfoot Shoes" "Quickslip Shoes"
 	SetFontSize 38
 	SetTextColor 255 255 255 255           
 	SetBorderColor 212 175 55 255     
@@ -149,7 +149,7 @@ Show # %D7 $type->chancing $tier->chancea !itemproperty_achancing
 	Corrupted False
 	ItemLevel >= 82
 	Rarity Normal
-	BaseType == "Visceral Quiver" "Heavy Belt" "Utility Belt" "Sacred Focus" "Tasalian Focus" "Leyline Focus" "Dueling Wand" "Siphoning Wand" "Obliterator Bow" "Omen Sceptre" "Rattling Sceptre" "Flying Spear" "Grand Spear" "Akoyan Spear" "Sinister Quarterstaff" "Bolting Quarterstaff" "Gold Ring" "Solar Amulet" "Gold Amulet"  "Slipstrike Vest" "Sleek Jacket" "Vile Robe" "Ancestral Tiara" "Kamasan Tiara" "Sekhema Sandals" "Daggerfoot Shoes" "Quickslip Shoes"
+	BaseType == "Visceral Quiver" "Sacred Focus" "Tasalian Focus" "Leyline Focus" "Dueling Wand" "Siphoning Wand" "Obliterator Bow" "Omen Sceptre" "Rattling Sceptre" "Flying Spear" "Grand Spear" "Akoyan Spear" "Sinister Quarterstaff" "Bolting Quarterstaff" "Gold Ring" "Solar Amulet" "Gold Amulet"  "Slipstrike Vest" "Sleek Jacket" "Vile Robe" "Ancestral Tiara" "Kamasan Tiara" "Sekhema Sandals" "Daggerfoot Shoes" "Quickslip Shoes"
 	SetFontSize 40
 	SetTextColor 255 255 255 255           
 	SetBorderColor 128 0 128 255            
@@ -251,6 +251,7 @@ Show # %D7 $type->gold $tier->stack3 !gold_pilehuge
 	SetBackgroundColor 20 20 0 255
 	PlayEffect Orange
 	MinimapIcon 1 Yellow Cross
+CustomAlertSound "Gold.mp3" 102
 
 Show # %D6 $type->gold $tier->stack2 !gold_pilelarge
 	StackSize >= 2000
@@ -377,16 +378,17 @@ Show # %D8 $type->exoticbases $tier->commonexoticbaseshigh !gear_jewelmagic
 	PlayAlertSound 2 300
 	PlayEffect Blue
 	MinimapIcon 1 Blue Diamond
+CustomAlertSound "4.mp3" 300
 
-#Show # %D4 $type->exoticbases $tier->commonexoticbases !gear_jewelmagiclow
-#	Rarity Normal Magic
-#	BaseType == "Breach Ring"
-#	SetFontSize 38
-#	SetTextColor 0 70 255 255
-#	SetBorderColor 0 70 255 255
-#	PlayEffect Blue Temp
-#	MinimapIcon 2 Blue Diamond
-
+Show # %D4 $type->exoticbases $tier->commonexoticbases !gear_jewelmagiclow
+	Rarity Normal Magic
+	BaseType == "Breach Ring"
+	SetFontSize 38
+	SetTextColor 0 70 255 255
+	SetBorderColor 0 70 255 255
+	PlayEffect Blue Temp
+	MinimapIcon 2 Blue Diamond
+CustomAlertSound "4.mp3" 300
 # Sanctum keys
 
 Show # $type->questlikeexception $tier->questlike !typebased_quest
@@ -581,13 +583,14 @@ Show # %D7 $type->chancing $tier->chancea !itemproperty_achancing
 	Corrupted False
 	Rarity Normal
 	BaseType == "Heavy Belt" "Utility Belt"
-	SetFontSize 45
+	SetFontSize 50
 	SetTextColor 125 255 89 255
 	SetBorderColor 125 255 89 255
 	SetBackgroundColor 0 50 0
 	PlayAlertSound 1 300
 	PlayEffect Red
 	MinimapIcon 0 Red Diamond
+CustomAlertSound "UniquesChance.mp3" 300
 
 #Show # %D2 $type->chancing $tier->chanceany !itemproperty_bchancing
 #	Mirrored False
@@ -2387,6 +2390,7 @@ Show # $type->xenotiering $tier->s !apex_stier
 	PlayAlertSound 6 300
 	PlayEffect Red
 	MinimapIcon 0 Red Star
+CustomAlertSound "S-Omen.mp3" 300
 
 Show # %H8 $type->xenotiering $tier->a !xeno_a
 	BaseType == "Carved Mischief" "Carved Tenacity" "Cryptic Key" "Emergent Instinct" "Emergent Protection" "Emergent Vigour" "Liquid Verisium" "Masterwork Rune" "Perfect Adept Rune" "Perfect Body Rune" "Perfect Charging Rune" "Perfect Desert Rune" "Perfect Glacial Rune" "Perfect Inspiration Rune" "Perfect Iron Rune" "Perfect Mind Rune" "Perfect Rebirth Rune" "Perfect Resolve Rune" "Perfect Robust Rune" "Perfect Stone Rune" "Perfect Storm Rune" "Perfect Vision Rune" "Perfect Ward Rune" "Revelatory Wombgift" "Shattered Triskelion" "Sovereign Alloy" "Veridical Starlit Ore" "Void Flux" "Vorana's Saga" "Warding Starlit Ore"
@@ -2617,6 +2621,7 @@ Show # $type->jewels->generic $tier->anytimelost !exotics_btier
 	PlayAlertSound 3 300
 	PlayEffect Blue
 	MinimapIcon 0 Blue Diamond
+CustomAlertSound "Time-lost.mp3" 300
 
 Show # $type->jewels->generic $tier->anycorruptedmod !exotics_btier
 	AnyEnchantment True
@@ -2630,6 +2635,7 @@ Show # $type->jewels->generic $tier->anycorruptedmod !exotics_btier
 	PlayAlertSound 3 300
 	PlayEffect Blue
 	MinimapIcon 0 Blue Diamond
+CustomAlertSound "VaalOrb.mp3" 300
 
 Show # $type->jewels->generic $tier->any5modded !exotics_btier
 	Corrupted True
@@ -2643,6 +2649,7 @@ Show # $type->jewels->generic $tier->any5modded !exotics_btier
 	PlayAlertSound 3 300
 	PlayEffect Blue
 	MinimapIcon 0 Blue Diamond
+CustomAlertSound "Uniques-TopMultiBasses.mp3" 300
 
 Show # $type->jewels->generic $tier->anyrare !gear_jewelrare
 	Rarity Rare
@@ -2696,6 +2703,7 @@ Show # $type->gems->lineage $tier->s !apex_stier
 	PlayAlertSound 6 300
 	PlayEffect Red
 	MinimapIcon 0 Red Star
+CustomAlertSound "S-Lineage-Gems.mp3" 300
 
 Show # %H8 $type->gems->lineage $tier->a !uniques_a
 	Class == "Skill Gems" "Support Gems"
@@ -2707,6 +2715,7 @@ Show # %H8 $type->gems->lineage $tier->a !uniques_a
 	PlayAlertSound 1 300
 	PlayEffect Red
 	MinimapIcon 0 Yellow Star
+CustomAlertSound "A-Lineage-Gems.mp3" 300
 
 Show # %H7 $type->gems->lineage $tier->b !uniques_x
 	Class == "Skill Gems" "Support Gems"
@@ -2718,6 +2727,7 @@ Show # %H7 $type->gems->lineage $tier->b !uniques_x
 	PlayAlertSound 3 300
 	PlayEffect Blue
 	MinimapIcon 1 Blue Star
+CustomAlertSound "A-Lineage-Gems.mp3" 300
 
 Show # %H6 $type->gems->lineage $tier->c !uniques_b
 	Class == "Skill Gems" "Support Gems"
@@ -2729,6 +2739,7 @@ Show # %H6 $type->gems->lineage $tier->c !uniques_b
 	PlayAlertSound 3 300
 	PlayEffect Brown
 	MinimapIcon 1 Brown Star
+CustomAlertSound "A-Lineage-Gems.mp3" 300
 
 # Level20
 
@@ -2766,6 +2777,7 @@ Show # %H6 $type->gems->uncut $tier->spirit19 !typebased_gems1
 	PlayAlertSound 2 300
 	PlayEffect Cyan
 	MinimapIcon 1 Cyan Triangle
+CustomAlertSound "Perfect-Jeweller's.mp3" 300
 
 Show # %H6 $type->gems->uncut $tier->skill19 !typebased_gems1
 	GemLevel 19
@@ -3202,6 +3214,7 @@ Show # $type->waystones $tier->corrupted8high !maps_specialb
 	PlayAlertSound 5 300
 	PlayEffect Red
 	MinimapIcon 0 Purple Square
+CustomAlertSound "Waystones.mp3" 300
 
 Show # $type->waystones $tier->enchanted1 !maps_specialb
 	AnyEnchantment True
@@ -3213,6 +3226,7 @@ Show # $type->waystones $tier->enchanted1 !maps_specialb
 	PlayAlertSound 5 300
 	PlayEffect Red
 	MinimapIcon 0 Purple Square
+CustomAlertSound "Waystones.mp3" 300
 
 Show # %D5 $type->waystones $tier->enchanted2 !maps_specialc
 	AnyEnchantment True
@@ -3225,6 +3239,7 @@ Show # %D5 $type->waystones $tier->enchanted2 !maps_specialc
 	PlayAlertSound 4 300
 	PlayEffect Yellow
 	MinimapIcon 2 Purple Square
+CustomAlertSound "Waystones.mp3" 300
 
 #Show # %D4 $type->waystones $tier->enchanted34 !maps_specialc
 #	AnyEnchantment True
@@ -3260,6 +3275,7 @@ Show # $type->waystones $tier->waystone_t16 !maps_specialb
 	PlayAlertSound 5 300
 	PlayEffect Red
 	MinimapIcon 0 Purple Square
+CustomAlertSound "Waystones.mp3" 300
 
 Show # $type->waystones $tier->waystone_t15 !maps_regularhighest
 	WaystoneTier 15
@@ -3269,6 +3285,7 @@ Show # $type->waystones $tier->waystone_t15 !maps_regularhighest
 	PlayAlertSound 5 300
 	PlayEffect Yellow
 	MinimapIcon 1 Red Square
+CustomAlertSound "Waystones.mp3" 300
 
 # !! Waypoint c9.waystone.generic.t14 : "Waystones - t12-t14" : "Maps"
 
@@ -3280,6 +3297,7 @@ Show # %D5 $type->waystones $tier->waystone_t14 !maps_regularhigh
 	PlayAlertSound 4 300
 	PlayEffect Yellow Temp
 	MinimapIcon 1 Yellow Square
+CustomAlertSound "Waystones.mp3" 300
 
 #Show # %DS3 $type->waystones $tier->waystone_t13 !maps_regularhigh
 #	WaystoneTier 13
@@ -3446,6 +3464,195 @@ Show # %D5 $type->currency->leveling $tier->rare
 #===============================================================================================================
 # !! Waypoint c9.currency.single : "Tierlist - Currency - General" : "Currency"
 
+Show
+Class == "Stackable Currency" "Incubators"
+SetTextColor 180 0 255 255
+SetBackgroundColor 255 255 255 255
+SetBorderColor 180 0 255 255
+SetFontSize 45
+BaseType == "Perfect Jeweller's Orb"
+CustomAlertSound "Perfect-Jeweller's.mp3" 300
+MinimapIcon 0 Pink Star
+PlayEffect Pink
+
+# FilterBlade: Conditional Entry
+Show
+Class == "Stackable Currency" "Incubators"
+SetTextColor 180 0 255 255
+SetBackgroundColor 255 255 255 255
+SetBorderColor 180 0 255 255
+SetFontSize 45
+BaseType == "Perfect Exalted Orb"
+CustomAlertSound "Exalted-3.mp3" 300
+MinimapIcon 0 Pink Star
+PlayEffect Pink
+
+# FilterBlade: Conditional Entry
+Show
+Class == "Stackable Currency" "Incubators"
+SetTextColor 180 0 255 255
+SetBackgroundColor 255 255 255 255
+SetBorderColor 180 0 255 255
+SetFontSize 45
+BaseType == "Perfect Chaos Orb"
+CustomAlertSound "Chaos-3.mp3" 300
+MinimapIcon 0 Pink Star
+PlayEffect Pink
+
+Show
+Class == "Stackable Currency" "Incubators"
+SetTextColor 255 0 0 255
+SetBackgroundColor 249 255 180 255
+SetBorderColor 255 0 0 255
+SetFontSize 45
+BaseType == "Fracturing Orb"
+CustomAlertSound "Fracturing.mp3" 300
+MinimapIcon 0 Red Star
+PlayEffect Red
+
+# FilterBlade: Conditional Entry
+Show
+Class == "Stackable Currency" "Incubators"
+SetTextColor 255 0 0 255
+SetBackgroundColor 249 255 180 255
+SetBorderColor 255 0 0 255
+SetFontSize 45
+BaseType == "Preserved Collarbone"
+CustomAlertSound "Collarbone.mp3" 300
+MinimapIcon 0 Red Star
+PlayEffect Red
+
+# FilterBlade: Conditional Entry
+Show
+Class == "Stackable Currency" "Incubators"
+SetTextColor 255 0 0 255
+SetBackgroundColor 249 255 180 255
+SetBorderColor 255 0 0 255
+SetFontSize 45
+BaseType == "Perfect Regal Orb"
+CustomAlertSound "Regal-3.mp3" 300
+MinimapIcon 0 Red Star
+PlayEffect Red
+
+# FilterBlade: Conditional Entry
+Show
+Class == "Stackable Currency" "Incubators"
+SetTextColor 255 255 255 255
+SetBackgroundColor 53 149 138 255
+SetBorderColor 255 255 255 255
+SetFontSize 40
+BaseType == "Greater Regal Orb"
+CustomAlertSound "Regal-2.mp3" 300
+MinimapIcon 1 Cyan Triangle
+PlayEffect Cyan
+
+# FilterBlade: Conditional Entry
+Show
+Class == "Stackable Currency" "Incubators"
+SetTextColor 255 255 255 255
+SetBackgroundColor 53 149 138 255
+SetBorderColor 255 255 255 255
+SetFontSize 40
+BaseType == "Greater Chaos Orb"
+CustomAlertSound "Chaos-2.mp3" 300
+MinimapIcon 1 Cyan Triangle
+PlayEffect Cyan
+
+# FilterBlade: Conditional Entry
+Show
+Class == "Stackable Currency" "Incubators"
+SetTextColor 255 255 255 255
+SetBackgroundColor 53 149 138 255
+SetBorderColor 255 255 255 255
+SetFontSize 40
+CustomAlertSound "Exalted-1.mp3" 300
+MinimapIcon 1 Cyan Triangle
+PlayEffect Cyan
+BaseType == "Exalted Orb"
+
+# FilterBlade: Conditional Entry
+Show
+Class == "Stackable Currency" "Incubators"
+SetTextColor 255 255 255 255
+SetBackgroundColor 53 149 138 255
+SetBorderColor 255 255 255 255
+SetFontSize 40
+BaseType == "Orb of Chance"
+CustomAlertSound "Chance.mp3" 300
+MinimapIcon 1 Cyan Triangle
+PlayEffect Cyan
+
+# FilterBlade: Conditional Entry
+Show
+Class == "Stackable Currency" "Incubators"
+SetTextColor 255 255 255 255
+SetBackgroundColor 53 149 138 255
+SetBorderColor 255 255 255 255
+SetFontSize 40
+BaseType == "Chaos Orb"
+CustomAlertSound "Chaos-1.mp3" 300
+MinimapIcon 1 Cyan Triangle
+PlayEffect Cyan
+
+# FilterBlade: Conditional Entry
+Show
+Class == "Stackable Currency" "Incubators"
+SetTextColor 255 255 255 255
+SetBackgroundColor 53 149 138 255
+SetBorderColor 255 255 255 255
+SetFontSize 40
+BaseType == "Greater Exalted Orb"
+CustomAlertSound "Exalted-2.mp3" 300
+MinimapIcon 1 Cyan Triangle
+PlayEffect Cyan
+
+# FilterBlade: Conditional Entry
+Show
+Class == "Stackable Currency" "Incubators"
+SetTextColor 255 255 255 255
+SetBackgroundColor 114 156 78 255
+SetBorderColor 255 255 255 255
+SetFontSize 40
+BaseType == "Perfect Orb of Transmutation"
+CustomAlertSound "Transmutation-3.mp3" 300
+MinimapIcon 1 Green Triangle
+PlayEffect Green
+
+# FilterBlade: Conditional Entry
+Show
+Class == "Stackable Currency" "Incubators"
+SetTextColor 255 255 255 255
+SetBackgroundColor 114 156 78 255
+SetBorderColor 255 255 255 255
+SetFontSize 40
+BaseType == "Perfect Orb of Augmentation"
+CustomAlertSound "Augmentation-3.mp3" 300
+MinimapIcon 1 Green Triangle
+PlayEffect Green
+
+# FilterBlade: Conditional Entry
+Show
+Class == "Stackable Currency" "Incubators"
+SetTextColor 255 255 255 255
+SetBackgroundColor 114 156 78 255
+SetBorderColor 255 255 255 255
+SetFontSize 40
+BaseType == "Greater Jeweller's Orb"
+MinimapIcon 1 Green Triangle
+PlayEffect Green
+
+# FilterBlade: Conditional Entry
+Show
+Class == "Stackable Currency" "Incubators"
+SetTextColor 255 255 255 255
+SetBackgroundColor 114 156 78 255
+SetBorderColor 255 255 255 255
+SetFontSize 40
+BaseType == "Gemcutter's Prism"
+CustomAlertSound "Gemcutter's.mp3" 300
+MinimapIcon 1 Green Triangle
+PlayEffect Green
+
 Show # $type->currency $tier->s !apex_stier
 	Class == "Incubators" "Stackable Currency"
 	BaseType == "Albino Rhoa Feather" "Altered Collarbone" "Ancient Collarbone" "Ancient Jawbone" "Ancient Rib" "Divine Orb" "Fracturing Orb" "Hinekora's Lock" "Mirror of Kalandra" "Orb of Extraction" "Perfect Chaos Orb" "Perfect Exalted Orb" "Perfect Jeweller's Orb" "Vaal Cultivation Orb"
@@ -3456,6 +3663,7 @@ Show # $type->currency $tier->s !apex_stier
 	PlayAlertSound 6 300
 	PlayEffect Red
 	MinimapIcon 0 Red Star
+CustomAlertSound "DivineOrb.mp3" 300
 
 Show # %H8 $type->currency $tier->a !currency_a
 	Class == "Incubators" "Stackable Currency"
@@ -3489,6 +3697,7 @@ Show # %H6 $type->currency $tier->c !currency_c
 	PlayAlertSound 2 300
 	PlayEffect White
 	MinimapIcon 1 Yellow Circle
+CustomAlertSound "VaalOrb.mp3" 300
 
 Show # %H5 $type->currency $tier->d !currency_d
 	Class == "Incubators" "Stackable Currency"
@@ -3911,6 +4120,7 @@ Show # $type->maplike->special $tier->logbookshigh !apex_stier
 	PlayAlertSound 6 300
 	PlayEffect Red
 	MinimapIcon 0 Red Star
+CustomAlertSound "Vault-Logbooks.mp3" 300
 
 #===============================================================================================================
 # [[2900]] Uniques
@@ -4155,6 +4365,7 @@ Show # %H6 $type->currency->splinter $tier->t1 !fragments_splinter1
 	PlayAlertSound 1 300
 	PlayEffect Red
 	MinimapIcon 0 Red Kite
+CustomAlertSound "6.mp3" 300
 
 Show # %H6 $type->currency->splinter $tier->t2 !fragments_splinter2
 	StackSize >= 8
@@ -4167,6 +4378,7 @@ Show # %H6 $type->currency->splinter $tier->t2 !fragments_splinter2
 	PlayAlertSound 2 300
 	PlayEffect Purple
 	MinimapIcon 0 Red Kite
+CustomAlertSound "6.mp3" 300    
 
 Show # %H6 $type->currency->splinter $tier->t3 !fragments_splinter3
 	StackSize >= 4
@@ -4179,6 +4391,7 @@ Show # %H6 $type->currency->splinter $tier->t3 !fragments_splinter3
 	PlayAlertSound 2 300
 	PlayEffect Purple
 	MinimapIcon 1 Orange Kite
+CustomAlertSound "1.mp3" 300    
 
 Show # %H6 $type->currency->splinter $tier->t4 !fragments_splinter4
 	StackSize >= 2
@@ -4191,6 +4404,7 @@ Show # %H6 $type->currency->splinter $tier->t4 !fragments_splinter4
 	PlayAlertSound 2 100
 	PlayEffect Purple Temp
 	MinimapIcon 1 Yellow Kite
+CustomAlertSound "1.mp3" 300    
 
 Show # %H6 $type->currency->splinter $tier->t5 !fragments_splinter5
 	Class == "Stackable Currency"
@@ -4201,6 +4415,7 @@ Show # %H6 $type->currency->splinter $tier->t5 !fragments_splinter5
 	PlayAlertSound 2 100
 	PlayEffect Purple Temp
 	MinimapIcon 1 White Kite
+CustomAlertSound "1.mp3" 300    
 
 Show # $type->fragments->generic $tier->s !apex_stier
 	BaseType == "Breachlord Sac" "Origin Spark" "Simulacrum"
@@ -4211,6 +4426,7 @@ Show # $type->fragments->generic $tier->s !apex_stier
 	PlayAlertSound 6 300
 	PlayEffect Red
 	MinimapIcon 0 Red Star
+CustomAlertSound "S-Tablets.mp3" 300
 
 Show # $type->fragments->generic $tier->a !fragments_a
 	BaseType == "An Audience with the King" "Breachstone" "Call of the Shadows" "Cowardly Fate" "Deadly Fate" "Head of the King" "Idol of Estazunti" "Kulemak's Invitation" "Raven's Reflection" "Sacred Bloom" "The Triskelion Reforged" "Victorious Fate"
@@ -4221,6 +4437,7 @@ Show # $type->fragments->generic $tier->a !fragments_a
 	PlayAlertSound 1 300
 	PlayEffect Red
 	MinimapIcon 0 Red Hexagon
+CustomAlertSound "A-Tablets.mp3" 300
 
 Show # $type->fragments->generic $tier->b !fragments_b
 	BaseType == "Expedition Tablet" "Ritual Tablet"
@@ -4231,6 +4448,7 @@ Show # $type->fragments->generic $tier->b !fragments_b
 	PlayAlertSound 2 300
 	PlayEffect Purple
 	MinimapIcon 1 Yellow Hexagon
+CustomAlertSound "B-Tablets.mp3" 300
 
 Show # $type->fragments->generic $tier->c !fragments_c
 	BaseType == "Abyss Tablet" "Breach Tablet" "Delirium Tablet" "Irradiated Tablet" "Overseer Tablet" "Temple Tablet"
@@ -4241,6 +4459,7 @@ Show # $type->fragments->generic $tier->c !fragments_c
 	PlayAlertSound 2 300
 	PlayEffect Purple Temp
 	MinimapIcon 1 White Hexagon
+CustomAlertSound "C-Tablets.mp3" 300
 
 #Show # $type->fragments->generic $tier->d !fragments_d
 #	SetFontSize 40
